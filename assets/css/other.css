@@ -1,0 +1,102 @@
+* { margin: 0px; padding: 0px; outline: 0px; box-sizing: border-box; }
+html { background-color: #fff; }
+body { font-family: "Open Sans", Helvetica, sans-serif; font-size: 14px; color: #000; font-weight: normal; height: 100vh; width: 98.7vw; }
+
+section { height: 100%; width: 100%; overflow: hidden; position: relative; }
+section img.background { height: 100%; position: absolute; top: 0px; left: 0px; z-index: -1; }
+section.container { padding: 64px; }
+
+#overlay { background: #185d1f; position: fixed; margin: 0px; z-index: 3; display: inline-flex; padding: 40px; width: 100vw; height: 15%; box-shadow: 0px 6px 6px 0px #000000c2; }
+#overlay img { padding-right: 20px;}
+#overlay .links { display: inline-flex;}
+#overlay .links a { text-decoration: none; color: #fff; padding: 0px 10px 0px 50px;}
+#overlay .links a:hover { color: #dcfbd3; transition: all .5s ease-in-out;}
+#overlay .links .logo { float: left; margin-left: 36vw; margin-top: -22px}
+
+
+#course { height: 500vh;}
+#course .left { position: fixed; float: left; top: 20vh; left: 40px; padding: 10px; }
+#course .left a { padding-bottom: 30px; color: #04542f; text-decoration: none; display: block; font-weight: bold;}
+#course .left a:hover { color: #185d1f;}
+#course .left h1{color: #001903; padding-bottom: 30px;}
+
+#course .right { position: relative; float: right;  right: 80px; top: 20vh;  max-width: 60vw; right: padding: 10px; }
+#course .right p { color: #a6d8a9;}
+#course .right a { padding-bottom: 30px; color: #000; text-decoration: none; display: block; font-weight: bold;}
+#course .right h1{color: #001903; padding-bottom: 30px;}
+#course .right .rating { display: inline-flex; padding-bottom: 20px;}
+#course .right .rating h2 { font-weight: 500; padding-right: 20px;}
+#course .right .rating input[type="submit"] {  color: #185d1f; background-color: #fff; padding: 6px; border-radius: 6px; border: solid 0px #000; box-shadow: 0px 6px 6px 0px #000;}
+
+#course .right .comment { display: inline-block; position: relative;}
+#course .right .comment h2 { font-weight: 500; padding-bottom: 20px;}
+#course .right .comment input { padding: 20px 120px; padding-right: 20px; border-radius: 6px; border: solid 0px #000; box-shadow: -1px 0px 4px 0px #000; background-image: url(user.svg); background-repeat: no-repeat; background-size: 40px; background-position: 20px 8px;}
+#course .right .comment input[type="submit"] {  color: #185d1f; background: #fff; padding: 6px; border-radius: 6px; border: solid 0px #000; box-shadow: 0px 6px 6px 0px #000;}
+
+#course .bottom { display: flex; color: #000; position: fixed; margin: 60px 50px; bottom: 0px;}
+#course .bottom a { padding-right: 20px; text-decoration: none; color: #001903;}
+
+#profile { height: 220vh}
+#profile .container { display: flex; position: relative; top: 16vh; padding: 50px;}
+#profile .container .left { display: block; position: relative; margin-right: 2vw; width: 50vw;}
+#profile .container .left p { padding-top: 6px;}
+#profile .container .left .content { display: flex;}
+#profile .container .left .content p { padding-left: 20px;}
+#profile .progress { display: inline-block;  position: absolute; top: 50vh;}
+#profile .progress ul { list-style: none; display: inline-block; }
+#profile .progress li { display: flex; margin-top: 20px; margin-bottom: 20px;}
+#profile .progress .content { position: relative; width: 90vw; background-color: #fff; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 40px 4px #dbdbdb;}
+#profile .progress .content h2 { color: #185d1f; padding-bottom: 20px;}
+#profile .progress .content p { padding-bottom: 10px;}
+#profile .progress .content .progression { background-color: #e0e0e0; display: flex; position: relative; padding: 6px; border-radius: 6px; max-width: 36vw;}
+#profile .progress .content .progression h4 { padding-right: 20px;}
+#profile .progress .content .progression .p::before { height: 20px; width: 20px; background-image: url(progress-report.svg); background-repeat: no-repeat; background-size: cover; display: inline-block; content: "";}
+#profile .progress .content .progression .r::before { height: 20px; width: 20px; background-image: url(star.svg); background-repeat: no-repeat; background-size: cover; display: inline-block; content: "";}
+#profile .progress .content .progression .re::before { height: 20px; width: 20px; background-image: url(recommended.svg); background-repeat: no-repeat; background-size: cover; display: inline-block; content: "";}
+#profile .progress .content .progression i { color: #185d1f;}
+#profile .bottom { display: flex; color: #000; position: relative; margin: 60px 50px; bottom: 0px;}
+#profile .bottom a { padding-right: 20px; text-decoration: none; color: #001903;}
+
+/*  MEDIA QUERIES*/
+@media screen and (max-width: 700px){
+    body { font-size: 11.8px;}
+
+    #overlay { margin: 0px; padding: 10px; height: auto;}
+    #overlay img { height: 15px; padding-right: 10px;}
+    #overlay .links a { padding: 0px 0px 0px 25px; font-size: 11pt;}
+    #overlay .links .logo { margin-left: 0vw; margin-top: -1vh;}
+    #overlay .links .logo img { height: 110%; width: 80%;}
+
+    #course {height: 460vh;}
+    #course .left { position: relative; display: inline-block; top: 7vh; left: 10px; text-align: center; z-index: 2;}
+    #course .left h1 { padding: 0px;}
+    #course .left .a { display: inline-block; padding: 6px;}
+    #course .left  a { padding-bottom: 6px; z-index: 2;}
+
+    #course .right { display: block; top: 10vh; float: none; left: 20px; max-width: 90vw;}
+    #course .bottom { position: relative; margin: 60px 20px;}
+}
+
+@media screen and (max-width: 400px){
+    body { font-size: 11px;}
+
+    #overlay { margin: 0px; padding: 10px; height: auto;}
+    #overlay img { height: 15px; padding-right: 6px;}
+    #overlay .links a { padding: 0px 0px 0px 14px; font-size: 10pt;}
+    #overlay .links .logo { margin-left: 0vw; margin-top: -1vh;}
+    #overlay .links .logo img { height: 100%; width: 80%;}
+    #course .right .comment input { padding: 20px 80px;}
+    #course .right .comment input[type="submit"] { margin-top: 20px;}
+}
+
+@media screen and (max-width: 350px) {
+    #overlay .links a { padding: 0px 0px 0px 14px; font-size: 8pt;}
+    #overlay .links .logo { margin-left: 0vw; margin-top: -1vh;}
+    #overlay .links .logo img { height: 100%; width: 80%;}
+    #course {height: auto;}
+    #course .left {  left: 0px;}
+    #course .right {left: 16px; max-width: 91vw;}
+    #course .right .comment input { padding: 20px; padding-left: 80px;}
+    #course .bottom { position: relative; margin: 60px 20px; display: block;}
+
+}

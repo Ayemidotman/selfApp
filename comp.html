@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SelfApp</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+    <link rel="stylesheet" type="text/css" href="assets/css/course.css">
+    <script src="assets/js/main.js" type="text/javascript"></script>
+    <script src="assets/js/scroll.js" type="text/javascript"></script>
+</head>
+<body>
+    <div id="overlay">
+        <a href="www.facebook.com/grace-nefi" title="Facebook"><img src="assets/img/facebook.svg" height="30"></a>
+        <a href="www.twitter.com" title="Twitter"><img src="assets/img/twitter.svg" height="30"></a>
+        <a href="www.instagram.com" title="Instagram"><img src="assets/img/ig.svg" height="30"></a>
+
+        <div class="links">
+            <a href="index.html#home">Home</a>
+            <a href="index.html#services">Services</a>
+            <a href="index.html#about">About</a><br>
+
+            <div class="logo">
+                <a href="index.html"><img src="assets/img/logo.png" height="70" width="250"></a>
+            </div>
+        </div>
+    </div><br>
+
+    <section id="course">
+        <div class="left">
+            <h1>Computing</h1>
+            <a href="#Introduction1">Introduction</a>
+            <a href="#Introduction2">Computer Hardware and Software</a>
+            <a href="#Introduction3">Application Software</a>
+            <a href="#Introduction4">System Software</a>
+            <a href="#Introduction5">Computer Programming</a>
+            <a href="#Introduction6">RATING & REVIEW</a>
+            <a href="#comment">COMMENT/DISCUSSION</a>
+            <a href="chatroom.html">Visit Chat Room</a>
+        </div>
+        <div class="right">
+            <h3 id="Introduction1">Introduction</h3>
+            Computing is any activity that uses computers. It includes developing hardware and software, and using computers to manage and process information, communicate and entertain. Computing is a critically important, integral component of modern industrial technology. Major computing disciplines include computer engineering, software engineering, computer science, information systems, and information technology.<br><br>
+
+            A computer is a machine that manipulates data according to a set of instructions called a computer program. The program has an executable form that the computer can use directly to execute the instructions. The same program in its human-readable source code form, enables a programmer to study and develop a sequence of steps known as an algorithm. Because the instructions can be carried out in different types of computers, a single set of source instructions converts to machine instructions according to the central processing unit type.<br><br>
+
+            The execution process carries out the instructions in a computer program. Instructions express the computations performed by the computer. They trigger sequences of simple actions on the executing machine. Those actions produce effects according to the semantics of the instructions.<br><br>
+
+            <h3 id="Introduction2">Computer Hardware and Software</h3>
+            Computer software or just "software", is a collection of computer programs and related data that provides the instructions for telling a computer what to do and how to do it. Software refers to one or more computer programs and data held in the storage of the computer for some purposes. In other words, software is a set of programs, procedures, algorithms and its documentation concerned with the operation of a data processing system. Program software performs the function of the program it implements, either by directly providing instructions to the computer hardware or by serving as input to another piece of software. The term was coined to contrast with the old term hardware (meaning physical devices). In contrast to hardware, software is intangible. Software is also sometimes used in a more narrow sense, meaning application software only.<br><br>
+
+            <h3 id="Introduction3">Application Software</h3>
+            Application software, also known as an "application" or an "app", is a computer software designed to help the user to perform specific tasks. Examples include enterprise software, accounting software, office suites, graphics software and media players. Many application programs deal principally with documents. Apps may be bundled with the computer and its system software, or may be published separately. Some users are satisfied with the bundled apps and need never install one.<br><br>
+
+            Application software is contrasted with system software and middleware, which manage and integrate a computer's capabilities, but typically do not directly apply them in the performance of tasks that benefit the user. The system software serves the application, which in turn serves the user.<br><br>
+            Application software applies the power of a particular computing platform or system software to a particular purpose. Some apps such as Microsoft Office are available in versions for several different platforms; others have narrower requirements and are thus called, for example, a Geography application for Windows or an Android application for education or Linux gaming. Sometimes a new and popular application arises that only runs on one platform, increasing the desirability of that platform. This is called a killer application.<br><br>
+
+            <h3 id="Introduction4">System Software</h3>
+            System software, or systems software, is computer software designed to operate and control the computer hardware and to provide a platform for running application software. System software includes operating systems, utility software, device drivers, window systems, and firmware. Frequently development tools such as compilers, linkers, and debuggers are classified as system software.<br><br>
+
+
+            <h3 id="Introduction5">Computer Programming</h3>
+            Computer programming in general is the process of writing, testing, debugging, and maintaining the source code and documentation of computer programs. This source code is written in a programming language, which is an artificial language often more restrictive or demanding than natural languages, but easily translated by the computer. The purpose of programming is to invoke the desired behavior (customization) from the machine. The process of writing high quality source code requires knowledge of both the application's domain and the computer science domain. The highest-quality software is thus developed by a team of various domain experts, each person a specialist in some area of development. But the term programmer may apply to a range of program quality, from hacker to open source contributor to professional. And a single programmer could do most or all of the computer programming needed to generate the proof of concept to launch a new "killer" application.<br><br>
+
+            <div class="rating">
+                <h2>RATE </h2>
+                <form name="rate" method="post" action="rate.php">
+                    <input type="radio" name="val" value="5">5
+                    <input type="radio" name="val" value="4">4
+                    <input type="radio" name="val" value="3">3
+                    <input type="radio" name="val" value="2">2
+                    <input type="radio" name="val" value="1">1
+                    <input type="submit" value="Submit" name="rate">
+                </form>
+            </div><br><br>
+            <div id="comment" class="comment">
+                <h2>COMMENT</h2>
+                <form name="comment" method="post" action="comment.php">
+                    <input type="text" placeholder="Type yor text here" name="text">
+                    <input type="submit" value="Submit" name="comment"><br><br>
+                </form>
+            </div>
+        </div>
+        <div class="bottom">
+            <a href="#">Help</a>
+            <a href="#">FAQs</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact us</a>
+        </div>
+    </section>
+
+</body>
+</html>

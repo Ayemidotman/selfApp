@@ -1,0 +1,298 @@
+* { margin: 0px; padding: 0px; outline: 0px; box-sizing: border-box; }
+html { background-color: #185d1f; }
+body { font-family: "Open-sans", Helvetica, sans-serif; font-size: 14px; color: #ffffff; font-weight: normal; height: 100vh; width: 98.7vw; }
+
+
+section { height: 100%; width: 100%; overflow: hidden; position: relative; }
+section img.background { height: 100%; position: absolute; top: 0px; left: 0px; z-index: -1; }
+section.container { padding: 64px; }
+
+#overlay { background: none; position: fixed; margin: 40px 60px; z-index: 3; display: inline-flex;}
+#overlay img { padding-right: 20px;}
+#overlay .links { display: inline-flex;}
+#overlay .links a { text-decoration: none; color: #fff; padding: 0px 10px 0px 50px;}
+#overlay .links a:hover { color: #dcfbd3; text-shadow: 1px 1px 8px #000; transition: all .5s ease-in-out;}
+#overlay .links .logo { float: left; margin-left: 36vw; margin-top: -22px}
+
+
+#home .container { position: relative; text-align: right; float: right; top: 30vh; right: 60px; padding: 10px; transform: translate(0%, 0%); animation: text 3s 1; display: run-in;}
+#home .container h1 { padding-bottom: 20px; font-size: 30pt; font-family: cursive; text-shadow: -3px -2px 19px #000; }
+#home .container p { color: #a6d8a9; line-height: 24px;}
+#home .container a { padding: 20px; color: #fff; background-color: #185d1f; text-decoration: none; border-radius: 6px; font-weight: bolder; box-shadow: 0px 6px 6px 0px #000;}
+#home .container a:hover { background-color: #fff; color: #185d1f; box-shadow: none; transition: all .5s ease-in-out;}
+
+
+#services { height: 60%;}
+#services img.background { height: 200%; top: -30.9vh;}
+#services .container { position: relative; top: 8vh;}
+#services .container .service { position: absolute; padding: 10px; top: 10vh; }
+#services .container .service ul { list-style: none; display: inline-flex; }
+#services .container .service li { display: flex; margin-left: 5em; margin-right: 5em;}
+#services .container .service ul li .content { max-width: 20vw; margin-left: 20px; }
+#services .container .service ul li .content h1 { padding-bottom: 20px;}
+#services .container .service ul li .content p { color: #a6d8a9;}
+#services .container .service ul li .content a { padding: 20px; color: #fff; position: absolute; background-color: #185d1f; text-decoration: none; border-radius: 6px; font-weight: bolder; box-shadow: 0px 6px 6px 0px #000;}
+#services .container .service ul li .content a:hover { background-color: #fff; color: #185d1f; box-shadow: none; transition: all .5s ease-in-out;}
+
+#courses { height: 90%;}
+#courses img.background { height: 140%; top: -18vh;}
+#courses .container { top: 8vh; position: relative; padding: 10px;}
+#courses .container .courses { position: absolute; padding: 10px; top: 10vh; }
+#courses .container .courses ul { list-style: none; display: inline-flex; }
+#courses .container .courses li { display: flex;}
+#courses .container .courses ul li .content { max-width: 20vw; margin-left: 60px; margin-right: 40px;}
+#courses .container .courses ul li .content h1 { padding-bottom: 20px;}
+#courses .container .courses ul li .content p { color: #a6d8a9;}
+#courses .container .courses ul li .content a { padding: 20px; color: #fff; position: absolute; background-color: #185d1f; text-decoration: none; border-radius: 6px; font-weight: bolder; box-shadow: 0px 6px 6px 0px #000;}
+#courses .container .courses ul li .content a:hover { background-color: #fff; color: #185d1f; box-shadow: none; transition: all .5s ease-in-out;}
+
+#tutors { height: 90%;}
+#tutors .container { top: 7vh; position: relative; padding: 10px;}
+#tutors .container .courses { position: absolute; padding: 10px; top: 10vh; }
+#tutors .container .courses ul { list-style: none; display: inline-flex; }
+#tutors .container .courses li { display: flex; margin-left: 80px; margin-right: 60px;}
+#tutors .container .courses ul li .content { max-width: 20vw; margin-left: 40px; margin-right: 40px;}
+#tutors .container .courses ul li span { padding-bottom: 20px; display: block;}
+#tutors .container .courses ul li span h1 { text-align: center;}
+#tutors .container .courses ul li .content p { color: #a6d8a9;}
+#tutors .container .courses ul li .content a { padding: 20px; color: #fff; position: absolute; background-color: #185d1f; text-decoration: none; border-radius: 6px; font-weight: bolder; box-shadow: 0px 6px 6px 0px #000;}
+#tutors .container .courses ul li .content a:hover { background-color: #fff; color: #185d1f; box-shadow: none; transition: all .5s ease-in-out;}
+
+#benefits { height: 70%;}
+#benefits img.background { height: 174%; top: -26.8vh;}
+#benefits .container { top: 8vh; right: 24em; position: relative; padding: 10px; float: right;}
+#benefits .container p {  padding-bottom: 60px;}
+/* #benefits .container p::before { content: url(logo.png);} */
+
+
+#about .container { top: 14vh; right: 10vw; max-width: 30vw; position: relative; padding: 10px; float: right;}
+#about .container h1 { font-size: 28pt; padding-bottom: 20px;}
+#about .container p { padding-bottom: 20px; line-height: 24px;}
+#about .container h3 { color: #000;  font-weight: 500; padding-bottom: 20px;}
+#about .container i { color: #fff;}
+#about .container a { color: #fff; text-decoration: none; }
+#about .container a:hover { color: #a6d8a9;}
+
+#ask .container { position: relative; top: 16vh; padding: 60px; max-width: 50vw; display: block;}
+#ask .container p { color: #a6d8a9; font-size: 10pt; padding-top: 20px;}
+#ask .container input { padding: 10px; border-radius: 6px; border: none; margin-bottom: 20px;}
+#ask .container textarea { background: #185d1fc7; border: solid 0px #000; border-radius: 6px; resize: none; padding: 20px; box-shadow: 0px 6px 6px 0px #000; font-family: Open Sans; color: #fff;}
+#ask .container .a { margin-top: 20px; padding: 20px; color: #185d1f; background-color: #fff; text-decoration: none; border: none; border-radius: 6px; font-weight: bolder; box-shadow: 0px 6px 6px 0px #000;}
+#ask .container .a:hover { cursor: pointer; background-color: #185d1f; color: #fff; transition: all .5s ease-in-out;}
+
+#answer .container { position: relative; top: 16vh; padding: 60px; max-width: 50vw; display: block;}
+#answer .container .user { display: flex; margin-top: 40px;}
+#answer .container .user p { padding-left: 20px; color: #fff;}
+#answer .container .rating { display: inline-flex; padding-bottom: 20px; margin-top: 20px;}
+#answer .container .rating h2 { font-weight: 500; padding-right: 20px;}
+#answer .container input { padding: 20px 80px; border-radius: 6px; border: solid 0px #000; background-image: url(td.jpg); background-repeat: no-repeat; background-size: 60px;}
+#answer .container input:last-child { background-color: #185d1f; background-image: none; padding: 20px; margin-left: -73px;}
+#answer .container input:last-child:hover { background-color: #fff; color: #185d1f; cursor: pointer; font-weight: bold;}
+
+#chatroom .side { display: block; margin-top: 16vh; padding: 60px; position: fixed;}
+#chatroom .side h1 { color: #001903;}
+#chatroom .chat { background-color: #185d1f80; margin-top: 25vh; margin-left: 31vw; width: 28vw; height: 70vh; padding: 10px; position: fixed; }
+#chatroom .chat .type { bottom: -10px; position: absolute; padding: 10px; left: -10px; }
+#chatroom .chat .type input { width: 28vw; padding: 20px 80px; border-radius: 6px; border: solid 0px #000; background-image: url(td.jpg); background-repeat: no-repeat; background-size: 60px;}
+#chatroom .chat .type input:focus { border: solid 1px yellow;}
+
+#signup { height: auto;}
+#signup img.background { position: fixed;}
+#signup .container { background-color: #185d1f80; margin-top: 24vh; position: relative; padding: 40px; max-width: 30vw; text-align: left; box-shadow: 0px 6px 6px 0px #000; border-radius: 6px;}
+#signup .container h1 { padding-bottom: 40px;}
+#signup .container input { background: none; color: #a6d8a9; padding: 10px; border: solid 0px #000;}
+hr { margin-bottom: 40px;}
+#signup .container i::before { height: 30px; width: 30px; background-image: url(user.svg); background-repeat: no-repeat; background-size: cover; display: inline-block; content: ""; }
+#signup .container .pass::before { height: 30px; width: 30px; background-image: url(lock.svg); background-repeat: no-repeat; background-size: cover; display: inline-block; content: ""; }
+#signup .container .cpass::before { height: 30px; width: 30px; background-image: url(lock.svg); background-repeat: no-repeat; background-size: cover; display: inline-block; content: ""; }
+#signup .container .mail::before { height: 30px; width: 30px; background-image: url(gmail.svg); background-repeat: no-repeat; background-size: cover; display: inline-block; content: ""; }
+#signup .container .tel::before { height: 30px; width: 30px; background-image: url(call-answer.svg); background-repeat: no-repeat; background-size: cover; display: inline-block; content: ""; }
+#signup .container .loc::before { height: 30px; width: 30px; background-image: url(placeholder.svg); background-repeat: no-repeat; background-size: cover; display: inline-block; content: ""; }
+#signup .container .s { padding: 10px 20px; color: #185d1f; background-color: #fff; text-decoration: none; border-radius: 6px; font-weight: bolder; box-shadow: 0px 6px 6px 0px #000;}
+#signup .container .s:hover { background-color: #185d1f; color: #fff; transition: all .5s ease-in-out;}
+
+#login .container { position: relative; float: right; top: 22vh; right: 16vw; padding: 40px; background-color: #185d1f80; box-shadow: 0px 6px 6px 0px #000; border-radius: 6px;}
+#login .container h1 { padding-bottom: 40px;}
+#login .container input { background: none; color: #a6d8a9; padding: 10px; border: solid 0px #000;}
+hr { margin-bottom: 40px;}
+#login .container i::before { height: 30px; width: 30px; background-image: url(user.svg); background-repeat: no-repeat; background-size: cover; display: inline-block; content: ""; }
+#login .container .pass::before { height: 30px; width: 30px; background-image: url(lock.svg); background-repeat: no-repeat; background-size: cover; display: inline-block; content: ""; }
+#login .container .l { padding: 10px 20px; margin-right: 10px; color: #185d1f; background-color: #fff; text-decoration: none; border-radius: 6px; font-weight: bolder; box-shadow: 0px 6px 6px 0px #000;}
+#login .container .l:hover { cursor: pointer; background-color: #185d1f; color: #fff; transition: all .5s ease-in-out;}
+
+@keyframes text {
+    0%{
+        color: black;
+        margin-bottom: -40px;
+    }
+
+    65%{
+        letter-spacing: 2px;
+    }
+    85%{
+        letter-spacing: 1px;
+        margin-bottom: -40px;
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translate3d(100%);
+    }
+}
+
+/*  MEDIA QUERIES*/
+@media screen and (max-width: 780px){
+    body { font-size: 14px;}
+    #overlay { margin: 14px 28px; }
+    #overlay img { height: 30px; padding-right: 20px;}
+    #overlay .links a { padding: 0px 10px 0px 25px; font-size: 14pt;}
+    #overlay .links .logo { margin-left: 7vw; margin-top: -1vh;}
+    #overlay .links .logo img { height: auto; width: 80%;}
+
+    #services { height: 100%;}
+    #services img.background { height: 200%; top: -52vh;}
+    #services .container .service ul { list-style: none; display: block; }
+    #services .container .service li { display: flex; margin-left: 4em; margin-right: 4em; margin-bottom: 10em;}
+    #services .container .service ul li img { height: 140px;}
+    #services .container .service ul li .content { max-width: 60vw;}
+
+    #courses { height: 220%;}
+    #courses img.background { height: 140%; top: -50vh;}
+    #courses .container .courses ul { list-style: none; display: block; }
+    #courses .container .courses li { display: flex;}
+    #courses .container .courses ul li .content { max-width: 90vw; margin-left: 40px; margin-right: 40px; margin-bottom: 80px;}
+    #courses .container .courses ul li .content img { height: 100px; width: 180px;}
+
+    #tutors { height: 170%;}
+    #tutors .container .courses ul { list-style: none; display: block; }
+    #tutors .container .courses li { display: inline-flex; margin-left: 20px; margin-right: 20px; margin-bottom: 70px;}
+    #tutors .container .courses ul li img { height: 100px;}
+    #tutors .container .courses ul li .content { max-width: 40vw; margin-left: 40px; margin-right: 40px;}
+    #tutors .container .courses ul li .content a { padding: 10px; }
+
+    #benefits { height: 60%;}
+    #benefits img.background { height: 174%; top: -23vh;}
+    #benefits .container { top: 8vh; right: 2em; position: relative; padding: 10px; float: right;}
+    #benefits .container p {  padding-bottom: 40px;}
+
+    #about { height: 100%;}
+    #about .container { top: 14vh; float: left; left: 4vw; max-width: 60vw; position: relative; padding: 10px; }
+    #about .container h1 { font-size: 14pt; padding-bottom: 20px;}
+    #about .container p { padding-bottom: 20px; line-height: 20px;}
+    #about .container h3 { color: #000;  font-weight: 500; padding-bottom: 20px; font-size: 11pt;}
+
+    #ask { height: 100%;}
+    #ask .container { max-width: 80vw; padding: 40px; top: 12vh;}
+    #ask .container h1 { font-size: 14pt;}
+    #ask .container p { color: #a6d8a9; padding-top: 20px;}
+    #ask .container input { padding: 10px; border-radius: 6px; border: none; margin-bottom: 20px;}
+    #ask .container .a { margin-top: 20px; padding: 20px; color: #185d1f; background-color: #fff; text-decoration: none; border: none; border-radius: 6px; font-weight: bolder; box-shadow: 0px 6px 6px 0px #000;}
+
+    #signup .container { max-width: 50vw; margin-top: 14vh;}
+}
+@media screen and (max-width: 700px){
+    body { font-size: 11.8px;}
+
+    #overlay { margin: 14px 14px; }
+    #overlay img { height: 15px; padding-right: 10px;}
+    #overlay .links a { padding: 0px 0px 0px 25px; font-size: 10pt;}
+    #overlay .links .logo { margin-left: 0vw; margin-top: -1vh;}
+    #overlay .links .logo img { height: 110%; width: 80%;}
+
+    #home .container { right: 20px; padding: 0px;}
+    #home .container h1 { font-size: 14pt; padding-bottom: 5px;}
+    #home .container p { line-height: 20px;}
+
+    #services { height: 100%;}
+    #services img.background { height: 200%; top: -52vh;}
+    #services .container .service ul { list-style: none; display: block; }
+    #services .container .service li { display: flex; margin-left: 2em; margin-right: 2em; margin-bottom: 10em;}
+    #services .container .service ul li img { height: 100px;}
+    #services .container .service ul li .content { max-width: 60vw;}
+
+    #courses { height: 220%;}
+    #courses img.background { height: 140%; top: -50vh;}
+    #courses .container .courses ul { list-style: none; display: block; }
+    #courses .container .courses li { display: flex;}
+    #courses .container .courses ul li .content { max-width: 90vw; margin-left: 20px; margin-right: 20px; margin-bottom: 80px;}
+    #courses .container .courses ul li .content img { height: 100px; width: 160px;}
+
+
+    #tutors { height: 170%;}
+    #tutors .container .courses ul { list-style: none; display: block; }
+    #tutors .container .courses li { display: inline-flex; margin-left: 20px; margin-right: 20px; margin-bottom: 70px;}
+    #tutors .container .courses ul li img { height: 100px;}
+    #tutors .container .courses ul li .content { max-width: 40vw; margin-left: 20px; margin-right: 20px;}
+    #tutors .container .courses ul li .content a { padding: 10px; }
+
+    #benefits { height: 60%;}
+    #benefits img.background { height: 174%; top: -23vh;}
+    #benefits .container { top: 8vh; right: 0em; position: relative; padding: 10px; float: right;}
+    #benefits .container p {  padding-bottom: 40px;}
+
+    #about { height: 100%;}
+    #about .container { top: 14vh; right: 16vw; max-width: 80vw; position: relative; padding: 10px; float: right;}
+    #about .container h1 { font-size: 14pt; padding-bottom: 20px;}
+    #about .container p { padding-bottom: 20px; line-height: 20px;}
+    #about .container h3 { color: #000;  font-weight: 500; padding-bottom: 20px; font-size: 11pt;}
+
+    #ask { height: 100%;}
+    #ask .container { max-width: 80vw; padding: 20px; top: 12vh;}
+    #ask .container h1 { font-size: 14pt;}
+    #ask .container p { color: #a6d8a9; padding-top: 20px;}
+    #ask .container input { padding: 10px; border-radius: 6px; border: none; margin-bottom: 20px;}
+    #ask .container textarea { width: 280px; height: 200px; background: #185d1fc7; border: solid 0px #000; border-radius: 6px; resize: none; padding: 20px; box-shadow: 0px 6px 6px 0px #000; font-family: Open Sans; color: #fff;}
+    #ask .container .a { margin-top: 20px; padding: 20px; color: #185d1f; background-color: #fff; text-decoration: none; border: none; border-radius: 6px; font-weight: bolder; box-shadow: 0px 6px 6px 0px #000;}
+
+    #signup .container { max-width: 90vw; margin-top: 14vh;}
+}
+
+@media screen and (max-width: 400px){
+    body { font-size: 11px;}
+
+    #overlay { margin: 14px 14px; }
+    #overlay img { height: 15px; padding-right: 6px;}
+    #overlay .links a { padding: 0px 0px 0px 14px; font-size: 7pt;}
+    #overlay .links .logo { margin-left: 0vw; margin-top: -1vh;}
+    #overlay .links .logo img { height: 100%; width: 80%;}
+
+    /* #home { height: 0%;} */
+    #home .container h1 { font-size: 12pt;}
+    #home .container p { font-size: 10px;}
+
+    #services { height: 90%;}
+    #services img.background { height: 200%; top: -47vh;}
+    #services .container .service ul { list-style: none; display: block; }
+    #services .container .service li { display: flex; margin-left: 2em; margin-right: 2em; margin-bottom: 7em;}
+    #services .container .service ul li img { height: 70px;}
+    #services .container .service ul li .content a { padding: 10px; }
+    #services .container .service ul li .content { max-width: 60vw;}
+
+    #courses { height: 200%;}
+    #courses img.background { height: 140%; top: -46vh;}
+    #courses .container .courses ul li .content { max-width: 80vw; margin-left: 20px; margin-right: 20px; margin-bottom: 80px;}
+    #courses .container .courses ul li .content img { height: 80px; width: 120px;}
+
+    #tutors { height: 150%;}
+    #tutors .container .courses ul li img { height: 80px;}
+    #tutors .container .courses ul li .content { max-width: 60vw; margin-left: 20px; margin-right: 20px;}
+    #tutors .container .courses ul li .content a { padding: 10px; }
+
+    #about .container { top: 14vh; right: -2vw; max-width: 100vw; position: relative; padding: 10px; float: right;}
+    #about .container h1 { font-size: 14pt; padding-bottom: 20px;}
+    #about .container p { padding-bottom: 20px; line-height: 20px;}
+
+    #login .container { position: relative; float: right; top: 22vh; right: 10vw; padding: 40px; background-color: #185d1f80; box-shadow: 0px 6px 6px 0px #000; border-radius: 6px;}
+    #signup .container { margin-top: 14vh;}
+}
+
+@media screen and (max-width: 350px) {
+    #services { height: 100%;}
+    #services img.background { height: 200%; top: -52vh;}
+    #courses { height: 220%;}
+    #tutors { height: 180%;}
+    #login .container { position: relative; float: right; top: 22vh; right: 2vw; padding: 40px; background-color: #185d1f80; box-shadow: 0px 6px 6px 0px #000; border-radius: 6px;}
+    #signup .container { max-width: 90vw; padding: 20px; margin-top: 14vh;}
+}
